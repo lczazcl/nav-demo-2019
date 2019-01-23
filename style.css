@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background:gray url(https://i.loli.net/2019/01/18/5c41db43ea0cc.jpg) no-repeat center center;
+  background-size: cover;
+}
+kbd {
+  position: relative;
+  width:4em;
+  height:4em;
+  display: inline-block;
+  text-transform: uppercase;
+  border:1px solid;
+}
+kbd > button {
+  position: absolute;
+  right:0;
+  bottom:0;
+  display: none;
+}
+kbd:hover > button{
+  display: inline-block;
+}
+main {
+  display:flex;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .wrapper {
+  background:rgba(255,255,255,.2);
+  border-radius:10px;
+}
+#main {
+  display: inline-block;
+}
+#main > div:nth-child(2) {
+  margin-left:-20px;
+}
+#main > div:nth-child(3) {
+  margin-left:-90px;
+}
+.key {
+  position: relative;
+  width:50px;
+  height:40px;
+  background: radial-gradient(ellipse at center, #292929 0%,#111111 100%);
+  color:#C5C5C5;
+  font-size:16px;
+  font-family: Helvetica;
+  border:1px solid #373737;
+  border-radius:6px;
+  box-shadow: 0 0 0 1px #1A1B1C,0 0 0 2px #1F2020,0 3px 0 2px #080808;
+  margin:0 10px;
+}
+.row {
+  margin:20px;
+}
+.row .key .text {
+  position: absolute;
+  top:2px;
+  left:4px;
+}
+.row .key img {
+  position: absolute;
+  left:4px;
+  bottom: 2px;
+  width: 16px;
+  height: 16px;
+}
